@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    color: rgb(0, 0, 0);
+    min-height: 10vh;
+}
+
+.nav-link ul{
+    display: flex;
+}
+
+.nav-link li {
+    margin: 0 20px;
+}
+
+.nav-link a {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.card img {
+    width: 100%;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.column:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 2rem 2rem rgba(255, 255, 255, 0.5);
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+i {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+}
+
+.made-by {
+    padding: 20px;
+    color: white;
+}
+
+.made-by a{
+    color: white;
+}
+
+.section-heading {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    margin: 20px 50px;
+}
+
+.about-me-img img {
+    height: 300px;
+}
+
+.about-me-text {
+    margin: 50px;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+}
